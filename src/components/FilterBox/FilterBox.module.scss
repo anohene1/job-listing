@@ -1,0 +1,13 @@
+.container {
+    max-width: 1000px;
+    background-color: white;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    margin-top: -30px;
+    padding: 25px 35px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
+}
