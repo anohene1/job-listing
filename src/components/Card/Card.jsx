@@ -3,9 +3,9 @@ import Avatar from "../Avatar/Avatar";
 import Tag from "../Tag/Tag";
 import Badge from "../Badge/Badge";
 
-function Card({item}) {
+function Card({item, onClick}) {
 
-  const tags = item.languages.map(language => <Tag>{language}</Tag>)
+  const tags = item.languages.map((language, index) => <Tag key={index} onClick={(name) => onClick(name)}>{language}</Tag>)
   const style = {
     'borderLeft': item.featured ? '5px solid hsl(180, 29%, 50%)' : 'none'
   }
