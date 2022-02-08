@@ -1,8 +1,9 @@
 import styles from './Avatar.module.scss'
 
-function Avatar() {
+function Avatar({image, alt}) {
     return (
         <div className={styles.avatar}>
+            <img src={image} alt={alt} />
         </div>
     )
 }

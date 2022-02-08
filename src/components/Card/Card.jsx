@@ -1,28 +1,35 @@
 import styles from "./Card.module.scss";
 import Avatar from "../Avatar/Avatar";
 import Tag from "../Tag/Tag";
+import Badge from "../Badge/Badge";
 
-function Card() {
+function Card({item}) {
+
+  const tags = item.languages.map(language => <Tag>{language}</Tag>)
+  const style = {
+    'borderLeft': item.featured ? '5px solid hsl(180, 29%, 50%)' : 'none'
+  }
+
   return (
-    <div className={styles.card}>
-      <Avatar />
+    <div style={style} className={styles.card}> 
+      <Avatar image={item.logo} alt={item.company} />
       <div className={styles.details}>
-        <div className="card--details--name-badges">
-          <span className={styles.company_name}>PhotoSnap</span>
+        <div className={styles.name_badges}>
+          <span className={styles.company_name}>{item.company}</span>
+          {item.new && <Badge new/>}
+          {item.featured && <Badge />}
         </div>
-        <h4 className={styles.title}>Senior Frontend Developer</h4>
+        <h4 className={styles.title}>{item.position}</h4>
         <div className={styles.stats}>
-          <span>1d ago</span>
+          <span>{item.postedAt}</span>
           <span>・</span>
-          <span>Part Time</span>
+          <span>{item.contract}</span>
           <span>・</span>
-          <span>USA only</span>
+          <span>{item.location}</span>
         </div>
       </div>
       <div className={styles.tags}>
-            <Tag>Frontend</Tag>
-            <Tag>Frontend</Tag>
-            <Tag>Frontend</Tag>
+            {tags}
         </div>
     </div>
   );

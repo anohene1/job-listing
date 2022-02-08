@@ -2,6 +2,7 @@
     max-width: 1000px;
     background-color: white;
     margin: 0 auto;
+    margin-bottom: 25px;
     padding: 25px 35px;
     display: flex;
     gap: 20px;
@@ -9,6 +10,7 @@
     border-radius: 10px;
     box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
 }
+
 
 .details {
     display: flex;
@@ -18,9 +20,15 @@
     flex: 2;
 }
 
+.name_badges {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 .company_name {
     color: hsl(180, 29%, 50%);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 15px;
 }
 
@@ -28,6 +36,8 @@
     margin: 0;
     cursor: pointer;
     transition: color 0.2s;
+    font-size: 17px;
+    display: inline;
 
     &:hover {
         color: hsl(180, 29%, 50%);
