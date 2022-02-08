@@ -12,7 +12,7 @@ function Card({item, onClick}) {
 
   return (
     <div style={style} className={styles.card}> 
-      <Avatar image={item.logo} alt={item.company} />
+      <div className={styles.avatar}><Avatar image={item.logo} alt={item.company} /></div>
       <div className={styles.details}>
         <div className={styles.name_badges}>
           <span className={styles.company_name}>{item.company}</span>

@@ -1,3 +1,7 @@
+.wrapper {
+    margin: 0 10%;
+}
+
 .container {
     max-width: 1000px;
     background-color: white;
@@ -28,4 +32,5 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }

@@ -9,6 +9,26 @@
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
+
+    @media (max-width: 845px) {
+        display: grid;
+        grid-template-columns: 90px 1fr;
+    }
+
+    @media (max-width: 580px) {
+        position: relative;
+        padding-top: 40px;
+        margin-bottom: 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .avatar {
+            position: absolute;
+            top: -30px;
+            left: 30px;
+        }
+    }
 }
 
 
@@ -18,6 +38,11 @@
     justify-content: space-between;
     gap: 10px;
     flex: 2;
+
+    @media (max-width: 580px) {
+        gap: 15px;
+    }
+
 }
 
 .name_badges {
@@ -30,6 +55,10 @@
     color: hsl(180, 29%, 50%);
     font-weight: 700;
     font-size: 15px;
+    
+    @media (max-width: 450px) {
+        font-size: 12px;
+    }
 }
 
 .title {
@@ -38,6 +67,10 @@
     transition: color 0.2s;
     font-size: 17px;
     display: inline;
+
+    @media (max-width: 450px) {
+        font-size: 15px;
+    }
 
     &:hover {
         color: hsl(180, 29%, 50%);
@@ -49,9 +82,23 @@
     gap: 10px;
     color: hsl(180, 8%, 52%);
     font-size: 15px;
+    flex-wrap: wrap;
+
+    @media (max-width: 450px) {
+        font-size: 12px;
+    }
 }
 
 .tags {
     display: flex;
     gap: 20px;
+
+    @media (max-width: 845px) {
+        grid-column: span 2;
+        border-top: 1px solid rgb(236, 227, 227);
+        padding-top: 20px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    
 }
