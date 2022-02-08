@@ -39,6 +39,10 @@ function App() {
     setCards(filteredCards)
   }
 
+  function clearFilters() {
+    setFilters([]);
+  }
+
   useEffect(function(){
   
     filterCards();
@@ -50,7 +54,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      { allFilters.length !== 0 && <FilterBox>
+      { allFilters.length !== 0 && <FilterBox onClear={clearFilters}>
         {allFilters}
       </FilterBox>}
       <Cards>{allCards}</Cards>

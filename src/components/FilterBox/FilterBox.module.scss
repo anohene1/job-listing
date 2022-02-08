@@ -8,6 +8,24 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
     box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
+
+    span {
+        color: hsl(180, 29%, 50%);
+        font-size: 12px;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.filters {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
