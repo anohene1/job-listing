@@ -42,6 +42,9 @@ function App() {
   useEffect(function(){
   
     filterCards();
+    if(filters.length === 0) {
+      setCards(data)
+    }
   },[filters]);
 
   return (
