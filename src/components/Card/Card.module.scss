@@ -29,6 +29,15 @@
             left: 30px;
         }
     }
+
+    @media (max-width: 450px) {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .avatar {
+            left: 20px;
+        }
+    }
 }
 
 
