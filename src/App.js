@@ -36,7 +36,9 @@ function App() {
     let filteredCards = [];
 
     filteredCards = data.filter((item) =>
-      item.languages.some((language) => filters.includes(language))
+      [item.role, item.level, ...item.languages, ...item.tools].some(
+        (category) => filters.includes(category)
+      )
     );
 
     if (filteredCards.length === 0) return;
