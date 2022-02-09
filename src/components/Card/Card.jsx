@@ -3,20 +3,25 @@ import Avatar from "../Avatar/Avatar";
 import Tag from "../Tag/Tag";
 import Badge from "../Badge/Badge";
 
-function Card({item, onClick}) {
-
-  const tags = item.languages.map((language, index) => <Tag key={index} onClick={(name) => onClick(name)}>{language}</Tag>)
+function Card({ item, onClick }) {
+  const tags = item.languages.map((language, index) => (
+    <Tag key={index} onClick={(name) => onClick(name)}>
+      {language}
+    </Tag>
+  ));
   const style = {
-    'borderLeft': item.featured ? '5px solid hsl(180, 29%, 50%)' : 'none'
-  }
+    borderLeft: item.featured ? "5px solid hsl(180, 29%, 50%)" : "none",
+  };
 
   return (
-    <div style={style} className={styles.card}> 
-      <div className={styles.avatar}><Avatar image={item.logo} alt={item.company} /></div>
+    <div style={style} className={styles.card}>
+      <div className={styles.avatar}>
+        <Avatar image={item.logo} alt={item.company} />
+      </div>
       <div className={styles.details}>
         <div className={styles.name_badges}>
           <span className={styles.company_name}>{item.company}</span>
-          {item.new && <Badge new/>}
+          {item.new && <Badge new />}
           {item.featured && <Badge />}
         </div>
         <h4 className={styles.title}>{item.position}</h4>
@@ -28,9 +33,7 @@ function Card({item, onClick}) {
           <span>{item.location}</span>
         </div>
       </div>
-      <div className={styles.tags}>
-            {tags}
-        </div>
+      <div className={styles.tags}>{tags}</div>
     </div>
   );
 }

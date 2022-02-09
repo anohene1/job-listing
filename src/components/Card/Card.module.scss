@@ -1,113 +1,109 @@
 .card {
-    max-width: 1000px;
-    background-color: white;
-    margin: 0 auto;
-    margin-bottom: 25px;
-    padding: 25px 35px;
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
+  max-width: 1000px;
+  background-color: white;
+  margin: 0 auto 25px;
+  padding: 25px 35px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 35px rgba(hsl(180, 29%, 50%), 0.3);
 
-    @media (max-width: 845px) {
-        display: grid;
-        grid-template-columns: 90px 1fr;
-    }
+  @media (max-width: 845px) {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+  }
 
-    @media (max-width: 580px) {
-        position: relative;
-        padding-top: 40px;
-        margin-bottom: 45px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-
-        .avatar {
-            position: absolute;
-            top: -30px;
-            left: 30px;
-        }
-    }
-
-    @media (max-width: 450px) {
-        padding-left: 20px;
-        padding-right: 20px;
-
-        .avatar {
-            left: 20px;
-        }
-    }
-}
-
-
-.details {
+  @media (max-width: 580px) {
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 45px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 10px;
-    flex: 2;
+    align-items: flex-start;
 
-    @media (max-width: 580px) {
-        gap: 15px;
+    .avatar {
+      position: absolute;
+      top: -30px;
+      left: 30px;
     }
+  }
 
+  @media (max-width: 450px) {
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .avatar {
+      left: 20px;
+    }
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 2;
+
+  @media (max-width: 580px) {
+    gap: 15px;
+  }
 }
 
 .name_badges {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .company_name {
-    color: hsl(180, 29%, 50%);
-    font-weight: 700;
-    font-size: 15px;
-    
-    @media (max-width: 450px) {
-        font-size: 12px;
-    }
+  color: hsl(180, 29%, 50%);
+  font-weight: 700;
+  font-size: 15px;
+
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 }
 
 .title {
-    margin: 0;
-    cursor: pointer;
-    transition: color 0.2s;
-    font-size: 17px;
-    display: inline;
+  margin: 0;
+  cursor: pointer;
+  transition: color 0.2s;
+  font-size: 17px;
+  display: inline;
 
-    @media (max-width: 450px) {
-        font-size: 15px;
-    }
+  @media (max-width: 450px) {
+    font-size: 15px;
+  }
 
-    &:hover {
-        color: hsl(180, 29%, 50%);
-    }
+  &:hover {
+    color: hsl(180, 29%, 50%);
+  }
 }
 
 .stats {
-    display: flex;
-    gap: 10px;
-    color: hsl(180, 8%, 52%);
-    font-size: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  color: hsl(180, 8%, 52%);
+  font-size: 15px;
+  flex-wrap: wrap;
 
-    @media (max-width: 450px) {
-        font-size: 12px;
-    }
+  @media (max-width: 450px) {
+    font-size: 12px;
+  }
 }
 
 .tags {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 
-    @media (max-width: 845px) {
-        grid-column: span 2;
-        border-top: 1px solid rgb(236, 227, 227);
-        padding-top: 20px;
-        width: 100%;
-        flex-wrap: wrap;
-    }
-    
+  @media (max-width: 845px) {
+    grid-column: span 2;
+    border-top: 1px solid rgb(236, 227, 227);
+    padding-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 }

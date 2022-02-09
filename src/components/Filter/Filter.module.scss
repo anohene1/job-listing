@@ -1,32 +1,32 @@
 .filter {
-    display: flex;
+  display: flex;
 
-    button {
-        border: none;
-        background-color: hsl(180, 29%, 50%);
-        color: white;
-        padding: 7px;
-        text-align: center;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 3px;
-        transition: background-color 0.2s;
-        cursor: pointer;
+  button {
+    border: none;
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+    padding: 7px;
+    text-align: center;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: background-color 0.2s;
+    cursor: pointer;
 
-        &:hover {
-            background-color:  hsl(180, 14%, 20%);
-        }
+    &:hover {
+      background-color: hsl(180, 14%, 20%);
     }
+  }
 }
 
 .name {
-    background-color: hsl(180, 31%, 95%);
-    color: hsl(180, 29%, 50%);
-    font-size: 12px;
-    font-family: 'Spartan', sans-serif;
-    display: grid;
-    place-items: center;
-    font-weight: 500;
-    padding: 7px 10px;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+  display: grid;
+  place-items: center;
+  font-weight: 500;
+  padding: 7px 10px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }

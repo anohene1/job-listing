@@ -1,17 +1,17 @@
 .button {
-    border: none;
-    background-color: hsl(180, 31%, 95%);
-    color: hsl(180, 29%, 50%);
-    font-size: 12px;
-    font-family: 'Spartan', sans-serif;
-    font-weight: 500;
-    padding: 7px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: color 0.2s, background-color 0.2s;
+  border: none;
+  background-color: hsl(180, 31%, 95%);
+  color: hsl(180, 29%, 50%);
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+  font-weight: 500;
+  padding: 7px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: color 0.2s, background-color 0.2s;
 
-    &:hover {
-        background-color: hsl(180, 29%, 50%);
-        color: white;
-    }
+  &:hover {
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+  }
 }
